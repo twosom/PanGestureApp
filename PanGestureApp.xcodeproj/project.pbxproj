@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		30F531FFCE7CBDD4E1F29AA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F531EC374B63A63AD408DE /* Main.storyboard */; };
+		30F533126CB8F16BFEC78F1E /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F532462D0091FDBD310571 /* DraggableView.swift */; };
 		30F53430966B4FE8DFB3B669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F53A1000EE9D159591E71D /* ViewController.swift */; };
 		30F536489CDDE279244B8B3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F53A905A1DE51C45F00B9E /* LaunchScreen.storyboard */; };
 		30F538CC9324FB6765B0E1BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F53730BE7554CB3FA8CB47 /* SceneDelegate.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30F532462D0091FDBD310571 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		30F5333B424E277421D9321E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		30F5360673E9E5AFDCEF409D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F53730BE7554CB3FA8CB47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				30F53730BE7554CB3FA8CB47 /* SceneDelegate.swift */,
 				30F53A1000EE9D159591E71D /* ViewController.swift */,
 				30F531EC374B63A63AD408DE /* Main.storyboard */,
+				30F532462D0091FDBD310571 /* DraggableView.swift */,
 			);
 			path = PanGestureApp;
 			sourceTree = "<group>";
@@ -92,12 +95,21 @@
 /* Begin PBXProject section */
 		30F53DD51340714CA50E872B /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					30F5366EF3A7DB5735FA1815 = {
+						DevelopmentTeam = YCY2X96LYD;
+					};
+				};
+			};
 			buildConfigurationList = 30F53C3406DAFC6BAC289359 /* Build configuration list for PBXProject "PanGestureApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 30F533798B30DE11774BA75C;
 			productRefGroup = 30F53FF1B55096ABE88DC03B /* Products */;
@@ -130,6 +142,7 @@
 				30F53C15604EE015F3C54B41 /* AppDelegate.swift in Sources */,
 				30F538CC9324FB6765B0E1BD /* SceneDelegate.swift in Sources */,
 				30F53430966B4FE8DFB3B669 /* ViewController.swift in Sources */,
+				30F533126CB8F16BFEC78F1E /* DraggableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +174,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanGestureApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -170,7 +184,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.PanGestureApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lab.gravy.PanGestureApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -245,6 +259,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YCY2X96LYD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanGestureApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -254,7 +269,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.icloud.PanGestureApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lab.gravy.PanGestureApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,8 +326,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -336,6 +350,7 @@
 				30F531BBBB6E04C692769804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
